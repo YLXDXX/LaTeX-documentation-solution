@@ -1,0 +1,28 @@
+{
+    "type": "script",
+    "description": "ocr-window",
+    "store": {},
+    "modes": [],
+    "usageCount": 3,
+    "prompt": false,
+    "omitTrigger": false,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [
+            "<super>"
+        ],
+        "hotKey": "m"
+    },
+    "filter": {
+        "regex": null,
+        "isRecursive": false
+    }
+}

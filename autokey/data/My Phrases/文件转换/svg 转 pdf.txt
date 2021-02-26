@@ -1,0 +1,1 @@
+rsvg-convert -f pdf -o ouput.pdf  outin.svg

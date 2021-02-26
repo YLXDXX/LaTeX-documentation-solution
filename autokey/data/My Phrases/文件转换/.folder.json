@@ -1,0 +1,23 @@
+{
+    "type": "folder",
+    "title": "\u6587\u4ef6\u8f6c\u6362",
+    "modes": [],
+    "usageCount": 16,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [],
+        "hotKey": null
+    },
+    "filter": {
+        "regex": "deepin-terminal-legacy.Deepin-terminal-legacy",
+        "isRecursive": false
+    }
+}

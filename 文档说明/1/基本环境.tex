@@ -1,0 +1,44 @@
+\section{基本环境}
+
+\subsection{\TeX Live 2020 安装}
+
+下载 \TeX Live 2020套件的镜像，可以在各个镜像站中直接下载，例如：
+\begin{itemize}
+	\item 
+	清华镜像：
+	\url{https://mirrors.tuna.tsinghua.edu.cn/CTAN/systems/texlive/Images/}
+	\item 
+	阿里云镜像：
+	\url{https://mirrors.aliyun.com/CTAN/systems/texlive/Images/}
+\end{itemize}
+
+下载好后挂载镜像文件，到挂载的目录执行 \lstinline!sudo ./install-tl! 即可。安装好后，默认目录在 \lstinline|/usr/local/texlive/2020/| ，可执行程序在 \lstinline|bin| 目录里。这里不建议修改环境变量，后面需要使用 \TeX 时直接指定目录即可。有一些程序运行依赖 \TeX ，安装的时候直接从源里面安装即可，源里面安装的 \TeX 与我们自己安装的 \TeX 互不干扰。 
+
+安装完成过后，由于 \TeX Live 2020 有一些宏包没有收录进去，需要我们手动安装，以 pgfornament 宏包为例，从 CTAN 下载后解压，然后执行如下命令：
+\begin{lstlisting}[language=bash]
+mkdir -p /usr/local/texlive/2020/texmf-dist/doc/latex/pgfornament
+mkdir -p /usr/local/texlive/2020/texmf-dist/tex/latex/pgfornament
+mkdir -p /usr/local/texlive/2020/texmf-dist/tex/generic/pgfornament
+cp -r doc/* /usr/local/texlive/2020/texmf-dist/doc/latex/pgfornament/
+cp -r latex/* /usr/local/texlive/2020/texmf-dist/tex/latex/pgfornament/
+cp -r generic/* /usr/local/texlive/2020/texmf-dist/tex/generic/pgfornament/
+/usr/local/texlive/2020/bin/x86_64-linux/mktexlsr
+\end{lstlisting}
+上面最后一句命令是刷新  \TeX Live 的缓存，让其识别我们手动安装的宏包。\footnote{若没有刷新\TeX Live，即使我们安装成功，在调用的时候依就会报缺少该宏包的错误。}
+
+\subsection{TeXStudio 编辑器}
+
+后端的环境安装好后，我们前端的编辑器就该登场了。这里推荐 TeXStudio ，基本功能应有尽有还带有强大的宏（Macros）。之前一位印度小哥分享了他在数学课上使用\LaTeX  \ and Vim 飞速记笔记的\hyperref{https://castel.dev/post/lecture-notes-1/}{category}{name}{文章} 。他速度的提升得益于 vim 中的 snippets 功能插件，然而在 TeXStudio 中，我们借助其中的宏，完全可以实现snippets的功能，TeXStudio 的宏可使用 javascript 语言编写，触发条件为正则表达式，也可以自定义快捷键，更为强大。唯一的缺点是没法像vim那样使用数字定义优先级，当宏的数量太多时，调整起来较为麻烦。
+
+
+编译器推荐设置为 xelatex ，对中文更加友好。对应的设置命令为：
+\begin{lstlisting}[language=bash]
+"/usr/local/texlive/2020/bin/x86_64-linux/xelatex" -synctex=1 -interaction=nonstopmode --shell-escape %.tex
+\end{lstlisting}
+
+设置好后，可以在TeXStudio里面跑一个例子，file $ \rightarrow $ New From Template 选择其中一个模板，编译一下，再调用  \lstinline|\usepackage{ctex}|  宏包，在文档里面输入中文，再编译一下，若没有问题则基本环境准配置就完成了。
+
+
+
+
+

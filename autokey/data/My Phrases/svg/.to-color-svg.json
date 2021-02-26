@@ -1,0 +1,31 @@
+{
+    "type": "script",
+    "description": "to-color-svg",
+    "store": {},
+    "modes": [
+        3
+    ],
+    "usageCount": 153,
+    "prompt": false,
+    "omitTrigger": false,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [
+            "<ctrl>",
+            "<shift>"
+        ],
+        "hotKey": "k"
+    },
+    "filter": {
+        "regex": "texstudio.TeXstudio",
+        "isRecursive": false
+    }
+}

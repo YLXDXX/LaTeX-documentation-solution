@@ -1,0 +1,1 @@
+seq -f "<cursor>-%04g" 1 9999 > name.txt

@@ -1,0 +1,29 @@
+{
+    "type": "phrase",
+    "description": "Second phrase",
+    "modes": [],
+    "usageCount": 82,
+    "prompt": false,
+    "omitTrigger": false,
+    "matchCase": false,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [
+            "<alt>"
+        ],
+        "hotKey": "d"
+    },
+    "filter": {
+        "regex": "texstudio.TeXstudio",
+        "isRecursive": false
+    },
+    "sendMode": "<ctrl>+v"
+}

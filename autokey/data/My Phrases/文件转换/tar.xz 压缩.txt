@@ -1,0 +1,1 @@
+XZ_OPT='-9ek --threads=0' tar -Jcvf  <cursor>.tar.xz  ./

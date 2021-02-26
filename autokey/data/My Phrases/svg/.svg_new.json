@@ -1,0 +1,33 @@
+{
+    "type": "script",
+    "description": "svg_new",
+    "store": {},
+    "modes": [
+        1
+    ],
+    "usageCount": 1,
+    "prompt": false,
+    "omitTrigger": true,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [
+            "newsvg"
+        ],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[^\\t]"
+    },
+    "hotkey": {
+        "modifiers": [
+            "<shift>",
+            "<super>"
+        ],
+        "hotKey": "x"
+    },
+    "filter": {
+        "regex": null,
+        "isRecursive": false
+    }
+}

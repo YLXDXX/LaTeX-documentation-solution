@@ -1,0 +1,28 @@
+{
+    "type": "script",
+    "description": "\u6587\u4ef6\u7ba1\u7406",
+    "store": {},
+    "modes": [],
+    "usageCount": 2,
+    "prompt": false,
+    "omitTrigger": false,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [
+            "<super>"
+        ],
+        "hotKey": "e"
+    },
+    "filter": {
+        "regex": null,
+        "isRecursive": false
+    }
+}

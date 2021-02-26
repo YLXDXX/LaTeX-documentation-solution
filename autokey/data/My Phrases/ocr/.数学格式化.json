@@ -1,0 +1,30 @@
+{
+    "type": "script",
+    "description": "\u6570\u5b66\u683c\u5f0f\u5316",
+    "store": {},
+    "modes": [
+        3
+    ],
+    "usageCount": 43,
+    "prompt": false,
+    "omitTrigger": false,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [
+            "<alt>"
+        ],
+        "hotKey": "m"
+    },
+    "filter": {
+        "regex": "texstudio.TeXstudio",
+        "isRecursive": false
+    }
+}

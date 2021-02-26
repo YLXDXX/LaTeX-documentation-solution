@@ -1,0 +1,28 @@
+{
+    "type": "script",
+    "description": "\u5173\u95ed\u56fe\u50cf\u9884\u89c8\u7a97\u53e3\uff08geeqie\uff09",
+    "store": {},
+    "modes": [
+        3
+    ],
+    "usageCount": 3,
+    "prompt": false,
+    "omitTrigger": false,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [],
+        "hotKey": "<escape>"
+    },
+    "filter": {
+        "regex": "geeqie.Geeqie",
+        "isRecursive": false
+    }
+}

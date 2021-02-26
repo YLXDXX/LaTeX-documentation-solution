@@ -1,0 +1,32 @@
+{
+    "type": "script",
+    "description": "Insert Date",
+    "store": {},
+    "modes": [
+        1
+    ],
+    "usageCount": 57,
+    "prompt": false,
+    "omitTrigger": true,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [
+            "date"
+        ],
+        "backspace": true,
+        "ignoreCase": true,
+        "immediate": false,
+        "triggerInside": true,
+        "wordChars": "[^\\t]"
+    },
+    "hotkey": {
+        "modifiers": [
+            "<alt>"
+        ],
+        "hotKey": "x"
+    },
+    "filter": {
+        "regex": null,
+        "isRecursive": false
+    }
+}

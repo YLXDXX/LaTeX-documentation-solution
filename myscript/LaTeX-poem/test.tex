@@ -1,0 +1,59 @@
+\documentclass{ctexbook}
+
+\usepackage{graphicx}
+\usepackage{tikz}
+
+\newcounter{poem}
+\renewcommand*{\thepoem}{%
+		\ifnum\value{poem}<1000 0\fi
+		\ifnum\value{poem}<100 0\fi
+		\ifnum\value{poem}<10 0\fi
+		\arabic{poem}%
+}
+
+\newcommand{\poemnametitle}{
+%\refstepcounter{poem}
+\begin{tikzpicture}[remember picture,overlay]
+\node [anchor=east,inner sep=0] (title) at ([yshift=0cm,xshift=0cm]0,0.2cm) {	\includegraphics[height=1em]{poem-title/poem-\thepoem.pdf}};%
+\node [anchor=east,inner sep=0] (name) at ([yshift=0cm,xshift=-0.5cm]title.west) {	\includegraphics[height=0.9em]{poem-name/poem-\thepoem.pdf}};%
+
+\end{tikzpicture}
+}
+
+\newcommand{\poemquote}{
+	\refstepcounter{poem}
+\begin{tikzpicture}[remember picture,overlay]
+\node [anchor=west,inner sep=0] at (0,2.2em) {\includegraphics[height=1.1em]{poem-quotes/poem-\thepoem.pdf}};%
+\end{tikzpicture}
+}
+
+
+
+\usepackage{fancyhdr}
+\fancyhf{}
+\lhead{\poemquote}
+\rhead{\poemnametitle}
+\pagestyle{fancy}
+
+\usepackage{pgffor}
+
+\newcommand\InsertBlankPages[1]{% \InsertBlankPages{n} => insert n blank pages
+	\foreach \blank in {1,...,#1} {
+		\newpage
+		%\thispagestyle{fancy}
+		\begin{center}
+			\zihao{4}
+			一页，一句，一人心\\
+			半卷，半弄，半入云
+		\end{center}
+	}%
+}
+
+
+\begin{document}
+
+
+
+\InsertBlankPages{28}
+
+\end{document}

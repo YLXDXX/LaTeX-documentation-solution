@@ -1,0 +1,1 @@
+img2pdf --output out.pdf --pagesize A4 *.jpg 

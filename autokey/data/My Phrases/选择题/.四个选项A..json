@@ -1,0 +1,32 @@
+{
+    "type": "script",
+    "description": "\u56db\u4e2a\u9009\u9879(A.)",
+    "store": {},
+    "modes": [
+        3
+    ],
+    "usageCount": 487,
+    "prompt": false,
+    "omitTrigger": false,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [
+            "asa"
+        ],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [
+            "<alt>"
+        ],
+        "hotKey": "1"
+    },
+    "filter": {
+        "regex": "texstudio.+TeXstudio",
+        "isRecursive": false
+    }
+}

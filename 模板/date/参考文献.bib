@@ -1,0 +1,63 @@
+%对书籍一般需要添加地名，例如address={北京}  %谨记不是最后需添加,（英文输入）
+%
+%已知bug：文献引用名中不能有英文的圆括号“()”，文件引用url链接中若有中文，可直接填中文，不能够弄成中文转义字符，另外有中文不能够显示出来
+%
+\iffalse
+
+文献类型	标识代码	Entry Type
+普通图书	M	book
+图书的析出文献	M	incollection
+会议录	C	proceedings
+会议录的析出文献	C	inproceedings 或 conference
+汇编	G	collection*
+报纸	N	newspaper*
+期刊的析出文献	J	article
+学位论文	D	mastersthesis 或 phdthesis
+报告	R	techreport
+标准	S	standard*
+专利	P	patent*
+数据库	DB	database*
+计算机程序	CP	software*
+电子公告	EB	online*
+档案	A	archive*
+舆图	CM	map*
+数据集	DS	dataset*
+其他	Z	misc
+
+﻿		
+著录项目（域）	Entry Field	
+主要责任者	author	
+题名	title	
+文献类型标识	mark*	
+载体类型标识	medium*	
+翻译者	translator*	
+编辑	editor	
+组织（用于会议）	organization	
+图书题名	booktitle	
+系列	series	
+期刊题名	journal	
+版本	edition	
+出版地	address	
+出版者	publisher	
+学校（用于phdthesis）	school	
+机构（用于techreport）	institution	
+出版年	year	
+卷	volume	
+期（或者专利号）	number	
+引文页码	pages	
+更新或修改日期	date*	
+引用日期	urldate*	
+获取和访问路径	url	
+数字对象唯一标识符	doi	
+语言	language*	
+拼音（用于排序）	key	
+
+注:
+- 其中带星号的不是 BibTeX/natbib 的标准著录项目。
+- 不支持的 BibTeX 标准著录项目有 annote, chapter, crossref, month,
+type。
+
+\fi
+%
+%
+%

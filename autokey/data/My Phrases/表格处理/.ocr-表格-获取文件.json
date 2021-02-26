@@ -1,0 +1,32 @@
+{
+    "type": "script",
+    "description": "ocr-\u8868\u683c-\u83b7\u53d6\u6587\u4ef6",
+    "store": {},
+    "modes": [
+        3
+    ],
+    "usageCount": 3,
+    "prompt": false,
+    "omitTrigger": false,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [
+            "<alt>",
+            "<ctrl>",
+            "<shift>"
+        ],
+        "hotKey": "y"
+    },
+    "filter": {
+        "regex": null,
+        "isRecursive": false
+    }
+}

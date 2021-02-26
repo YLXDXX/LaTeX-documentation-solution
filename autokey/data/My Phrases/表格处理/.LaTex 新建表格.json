@@ -1,0 +1,32 @@
+{
+    "type": "script",
+    "description": "LaTex \u65b0\u5efa\u8868\u683c",
+    "store": {},
+    "modes": [
+        1
+    ],
+    "usageCount": 14,
+    "prompt": false,
+    "omitTrigger": false,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [
+            "newtab"
+        ],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[^\\t]"
+    },
+    "hotkey": {
+        "modifiers": [
+            "<alt>"
+        ],
+        "hotKey": "t"
+    },
+    "filter": {
+        "regex": "texstudio.+TeXstudio",
+        "isRecursive": false
+    }
+}
